@@ -11,7 +11,7 @@ package br.com.sly.maildown;
 public class Constantes {
 	 
 	private static String emitenteCNPJ 	   = "";
-	private static String PASTA_XML  	   = "/u/siglo/spool/xml";
+	private static String PASTA_XML  	   = "/u/siglo/spool/xml";	
 	private static String PROTOCOL	       = "imap";
 	private static String HOST			   = "imap.emailexchangeonline.com";
 	private static int    PORTA			   = 143;
@@ -22,9 +22,7 @@ public class Constantes {
 	private static String PASTA_BACKUP     = "backup";
 	private static String INTERVALO        = "30"; // segundos
 	private static String APELIDO          = "DOWN_NFE_MULTIEIXO"; // segundos
-	private static String ARQLOG           = "/u/siglo/confignfe/log/downemailnfe.log";
- 
-	 
+	private static String ARQLOG           = "/u/siglo/confignfe/log/downemailnfe.log";	 
 	
 	
 	public static String getEmitenteCNPJ() {
