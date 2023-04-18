@@ -52,29 +52,24 @@ public class ManipularEmail {
 		URLName url = new URLName(Constantes.getPROTOCOL(), Constantes.getHOST(), Constantes.getPORTA(), "INBOX", Constantes.getLOGIN(), Constantes.getSENHA());
 		
 		System.out.println(url);
-		
+		/*
 		MailSSLSocketFactory sf = new MailSSLSocketFactory();
 		sf.setTrustedHosts(new String[] { "my-server"});
 		sf.setTrustAllHosts(true); 
- 
-
-		
+        */
+        
+ 		
 		if (session == null) {
 			Properties props = null;
 			try {
 				props = System.getProperties();
-				/*
+				 
 				props.setProperty("mail.imap.ssl.enable", "true");
 				props.put("mail.smtp.ssl.checkserveridentity", "true");
 				props.put("mail.imap.ssl.trust", "*");
-				props.put("mail.imap.ssl.socketFactory", sf);
-				props.put("mail.smtps.socketFactory", sf);
 				props.setProperty("mail.imaps.partialfetch", "false");
 				props.setProperty("mail.mime.base64.ignoreerrors", "true");
-				*/
-				props.put("mail.smtp.auth", "true");
-				props.put("mail.smtp.host", Constantes.getHOST());
-				props.put("mail.smtp.port", "587");
+				 
 				
 			} catch (SecurityException sex) {
 				props = new Properties();
